@@ -1,0 +1,28 @@
+@echo off
+setlocal
+echo ========================================
+echo    INSTALANDO DETECTOR DE OBJETOS
+echo ========================================
+echo.
+
+python --version >nul 2>&1
+if errorlevel 1 (
+  echo [ERRO] Python nao encontrado.
+  echo Baixe e instale: https://www.python.org/downloads/
+  echo (marque "Add Python to PATH")
+  pause
+  exit /b 1
+)
+
+echo [OK] Python encontrado.
+echo.
+echo Instalando dependencias...
+pip install -r requirements.txt
+
+echo.
+echo ========================================
+echo   INSTALACAO CONCLUIDA
+echo   Agora execute: iniciar.bat
+echo ========================================
+pause
+endlocal
