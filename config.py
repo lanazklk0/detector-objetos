@@ -1,7 +1,7 @@
-===========================================
-  CONFIGURAÇÕES DO DETECTOR DE OBJETOS
-  Altere aqui para personalizar!
-===========================================
+# ===========================================
+#   CONFIGURAÇÕES DO DETECTOR DE OBJETOS
+#   Altere aqui para personalizar!
+# ===========================================
 
 MODELO = "yolov8n.pt"
 CONFIANCA_MINIMA = 0.45
